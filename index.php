@@ -27,9 +27,9 @@
       }
       
 ?>
-      <br>Your random password: <h1><?php echo $str ?></h1>
+      <div class="password">Your random password: <b><?php echo $str ?></b></div>
 
-      <a href="<?php $str ?>">Pass Generate</a>
+      <a class="generate" href="<?php $str ?>">Pass Generate</a>
 
   
 </body>
