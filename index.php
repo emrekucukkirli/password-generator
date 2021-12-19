@@ -14,9 +14,9 @@
 
       $length = 8;
 
-
-      echo "<br/> Password length is $length <br><br>";
-
+?>
+      <div class="length"> Password length is <b> <?php echo $length ?></b></div>
+<?php
       $str = "";
 
             for ($i=0;$i< $length; $i++){
