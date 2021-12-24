@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro:wght@400;900&family=Twinkle+Star&display=swap');
 html {
     background-color: #111;
     color:#f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    font-weight: 400;
 }
 body > div {
-    /* width: 500px; */
     margin: 10px 0;
 }
 .choose {
@@ -25,12 +27,9 @@ input[type=number]{
 input[type=number]:focus{
     outline: transparent;
 }
-/* label[for=uppercase], label[for=lowercase], label[for=number], label[for=symbol-easy], label[for=symbol-hard] {
-    width: 130px;
-} */
-.generate{
+.generate, .password>button{
     width: 170px;
-    margin: 20px auto;
+    margin: 20px;
     padding: 10px;
     display: block;
     background-color: transparent;
@@ -39,11 +38,29 @@ input[type=number]:focus{
     border: 1px solid deepskyblue;
     transition: all .25s ease-in;
 }
-.generate:hover {
+.generate:hover, .password>button:hover {
     color: #f5f5f5;
     background-color: deepskyblue;
     cursor: pointer;
 }
-.length>b, .password>b {
+.length>b {
     font-size: 24px;
+}
+.password {
+    padding-top: 20px;
+}
+.password > input {
+    width: 50%;
+    background-color: transparent;
+    border: transparent;
+    padding: 5px;
+    font-size: 24px;
+    color: deepskyblue;
+    text-align: center;
+}
+.password > input:focus {
+    outline: transparent;
+}
+.password>button {
+    display: inline-block;
 }
