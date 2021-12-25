@@ -12,18 +12,17 @@
       <form class="choose" action="" method="POST">
             <label for="length">
                   <div>Enter your password length </div>
-                  <input type="number" min="6" id="length" name="length" placeholder="Password Length">
+                  <input type="number" min="6" id="length" name="length" placeholder="Password Length" value="<?php echo $_POST['length']; ?>">
             </label>
-            <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase">Uppercase ( e.g. ABCDEFGH )</label>
-            <label for="symbol-easy"><input type="checkbox" name="symbol-easy" id="symbol-easy">Symbols Basic ( e.g. -+.*)</label>
-            <label for="symbol-hard"><input type="checkbox" name="symbol-hard" id="symbol-hard">Symbols Complex ( e.g. !@#$%^&,_?( )=:;)</label>
+            <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase" <?php if(isset($_POST['uppercase'])) echo "checked" ?>>Uppercase ( e.g. ABCDEFGH )</label>
+            <label for="symbol-easy"><input type="checkbox" name="symbol-easy" id="symbol-easy" <?php if(isset($_POST['symbol-easy'])) echo "checked" ?>>Symbols Basic ( e.g. -+.*)</label>
+            <label for="symbol-hard"><input type="checkbox" name="symbol-hard" id="symbol-hard" <?php if(isset($_POST['symbol-hard'])) echo "checked" ?>>Symbols Complex ( e.g. !@#$%^&,_?( )=:;)</label>
             <input class="generate" type="submit" name="generate" value="Generate">
       </form>
 
 <hr>
-
+      
       <?php
-
       $start_keys = array('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0');
       $uppercase_keys = array('A','B','C','D','E','F','G','H','I','J','K','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
       $symols_easy = array('-','+','.','*');
