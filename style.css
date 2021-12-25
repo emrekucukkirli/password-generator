@@ -134,6 +134,11 @@ body.dark .generate, body.dark .password>button {
     background-color: #000;
     cursor: pointer;
 }
+body.dark .generate:hover, body.dark .password>button:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
 .length>b {
     font-size: 24px;
 }
