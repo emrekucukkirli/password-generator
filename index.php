@@ -66,7 +66,7 @@
       <div class="password">
             Your random password: <br> 
             <input type="text" name="copy" id="copy_input" value="<?php echo $str ?>">
-            <button onclick="copyFun()">Copy Password</button>
+            <button onclick="copyFun()" id="copy_btn">Copy Password</button>
       </div>
       <script src="script.js"></script>
 </body>

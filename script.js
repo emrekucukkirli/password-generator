@@ -1,10 +1,7 @@
-function copyFun() {
-    var copyText = document.getElementById("copy_input");
-  
+  function copyFun() {
+    var copyText = document.querySelector("#copy_input");
     copyText.select();
-    copyText.setSelectionRange(0, 99999); 
-  
-    navigator.clipboard.writeText(copyText.value);
-  
-    alert("Copied the text: " + copyText.value);
+    document.execCommand("copy");
   }
+  
+  document.querySelector("#copy_btn").addEventListener("click", copy);
