@@ -1,11 +1,3 @@
-<?php
-	// session_start();
-	// if (!$_SESSION["lang"]){
-	// 	require("lang/tr.php");
-	// }else {
-	// 	require("lang/".$_SESSION["lang"].".php");
-	// }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
