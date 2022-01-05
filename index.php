@@ -1,3 +1,11 @@
+<?php
+	// session_start();
+	// if (!$_SESSION["lang"]){
+	// 	require("lang/tr.php");
+	// }else {
+	// 	require("lang/".$_SESSION["lang"].".php");
+	// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,6 +67,12 @@
                         <i class='fas fa-sun'></i>
                         <div class='ball'></div>
                   </label>
+            </div>
+            <div class="flags">
+                  <ul>
+                        <li><a href="#"><img src="img/turkey.png" /></a></li>
+                        <li><a href="#"><img src="img/united-states.png" /></a></li>
+                  </ul>
             </div>
             <h1>Password Generator</h1>
             <form class="choose" action="" method="POST">

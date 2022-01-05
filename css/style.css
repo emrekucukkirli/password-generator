@@ -19,10 +19,29 @@ body.dark {
     width: 100%;
     margin: 0 auto;
 }
+h1 {
+    font-size: 26px;
+}
+.flags{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+}
+.flags ul {
+    list-style: none;
+    display: flex;
+}
+.flags li {
+    padding-left: 5px;
+}
+.flags li img{
+    width: 30px;
+}
 .toggle{
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 25px;
 }
 .checkbox {
     opacity: 0;
@@ -30,7 +49,7 @@ body.dark {
 }
 .label {
     width: 50px;
-    height: 26px;
+    height: 20px;
     background-color:#111;
     display: flex;
     border-radius:50px;
@@ -45,7 +64,7 @@ body.dark {
     height: 20px;
     background-color: white;
     position: absolute;
-    top: 5px;
+    top: 2px;
     left: 6px;
     border-radius: 50%;
     transition: transform 0.2s linear;
